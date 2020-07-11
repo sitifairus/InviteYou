@@ -780,11 +780,10 @@ h3 {
 }
 @media (max-width: 767px) {
 	.header-area .main-header-area .logo-img ul li a {
-	  padding-top:5px;
-	  padding-left:1px;
-	  font-size: 20px;
-	  width: 30px;
-	  height: 30px;
+	  padding-top:0px;
+	  font-size: 18px;
+	  width: 32px;
+	  height: 32px;
 	  -webkit-border-radius: 50%;
 	  -moz-border-radius: 50%;
 	  border-radius: 50%;
@@ -792,7 +791,7 @@ h3 {
 	  color: #C78665;
 	  display: inline-block;
 	  text-align: center;
-	  line-height: 35px;
+	  line-height: 31px;
 	  margin: 0 3px;
 	}
 }
