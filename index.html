@@ -28,8 +28,7 @@
 </head>
 
 <body>
-<audio autoplay loop>
-  <source src="music\Perfect.mp3" type="audio/mpeg">
+<audio id="myAudio" src="music\Perfect.mp3" loop>
 </audio>
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -43,9 +42,18 @@
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-3">
                             <div class="logo-img">
-                                <a href="#home">
-									<img src="img/logome.png" alt="">
-                                </a>
+                                <table>
+					<tr>
+					<td>
+						<a href="#home">
+							<img src="img/logome.png" alt="">
+						</a>
+					</td>
+					<td>
+						<ul><li><a id="play-pause-button" onClick="togglePlay()" class="fa fa-play"></a></li></ul>
+					</td>
+					</tr>
+				</table>
                             </div>
                         </div>
                         <div class="col-xl-9 col-lg-9">
@@ -591,7 +599,28 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap">
     </script>
+    <script>
+		var myAudio = document.getElementById("myAudio");
+		var isPlaying = false;
 
+		function togglePlay() {
+		  if (isPlaying) {
+			myAudio.pause()
+		  } else {
+			myAudio.play();
+		  }
+		};
+		myAudio.onplaying = function() {
+		  isPlaying = true;
+		  $("#play-pause-button").removeClass('fa-play');
+		  $("#play-pause-button").addClass('fa-pause');
+		};
+		myAudio.onpause = function() {
+		  isPlaying = false;
+		  $("#play-pause-button").removeClass('fa-pause');
+		  $("#play-pause-button").addClass('fa-play');
+		};
+    </script>
 
 
 </body>
