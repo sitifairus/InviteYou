@@ -1043,13 +1043,13 @@ h3 {
 /* line 7, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
 .slider_area {
   padding: 0 0px;
-  background: #fff;
+  background: #F9F4F1;
 }
 
 @media (max-width: 767px) {
   /* line 7, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
   .slider_area {
-    padding: 0 20px;
+    padding: 0 0px;
   }
 }
 
@@ -5454,7 +5454,7 @@ h6 {
 
 /*Sakura fall*/
 body {
-  background-color: #F9F4F1;
+  background-color: #fff;
 }
 
 .snow-bg {
