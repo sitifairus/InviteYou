@@ -1042,8 +1042,7 @@ h3 {
 
 /* line 7, ../../Arafath/CL/CL september/212. Wedding/HTML/scss/_slider.scss */
 .slider_area {
-  padding: 0 0px;
-  background: #F9F4F1;
+  padding: 0 100px;
 }
 
 @media (max-width: 767px) {
@@ -5451,5 +5450,8 @@ h6 {
   margin-right: 10px;
   font-size: 12px;
 }
+
+/*Petal fall*/
+
 
 /*# sourceMappingURL=style.css.map */
